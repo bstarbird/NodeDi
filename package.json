@@ -1,5 +1,5 @@
 {
-	"name": "NodeDi",
+	"name": "nodey",
 	"description": "Rough DI framework to overcome many, many require statements",
 	"version": "0.0.1",
 	"homepage": "https://github.com/bstarbird/NodeDi",

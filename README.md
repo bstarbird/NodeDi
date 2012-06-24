@@ -1,4 +1,4 @@
-# NodeDi
+# Nodey
 
 ## Description
 Horrible, simplistic, magic Dependency Injection Framework for Node.js. I feel dirty posting this.
