@@ -1,11 +1,11 @@
 {
-	"name": "NodeDI",
+	"name": "NodeDi",
 	"description": "Rough DI framework to overcome many, many require statements",
 	"version": "0.0.1",
-	"homepage": "https://github.com/bstarbird/NodeDependencyInjection",
+	"homepage": "https://github.com/bstarbird/NodeDi",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/bstarbird/NodeDependencyInjection"
+		"url": "https://github.com/bstarbird/NodeDi.git"
 	},
 	"main":"./index.js",
 	"author": "Ben Starbird",
