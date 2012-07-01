@@ -1,2 +1,2 @@
 // Convention says that this file is useful.
-module.exports = require('./lib/OhNoesItIsDIinAScriptedLanguage');
+module.exports = require('./lib/nodey');
