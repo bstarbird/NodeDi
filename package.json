@@ -16,6 +16,7 @@
 	"dependencies" : { 
 		"mocha" : "0.14.x",
 		"should" : "0.6.x",
+		"mockery" : "1.1.x",
 		"async" : "0.1.x",
 		"introspect" : "0.x"
 	}
