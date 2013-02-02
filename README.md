@@ -5,7 +5,7 @@ Simplistic, magic Dependency Injection Framework for Node.js. Nodey is Dependenc
 Pronounced Nodey, like "Node Dee" but with less D's: Nodey.
 
 ## Requires
-Requires Mocha, Should and Mockery to run tests, but only Async and Introspect to run.
+Requires Mocha, Should and Mockery to run tests, but only Async, Introspect, and Coffee-Script to run.
 
 ##Usage
 Nodey builds up a container indexed by filename for all of the .js files in a given folder. When you want to get a type out of nodey you have to pass it the same name as the filename (sans .js). 
