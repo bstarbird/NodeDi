@@ -15,13 +15,11 @@ The current version of Nodey will choke if you register two files that are named
 Pass Nodey a set of folders in a path that you would like to register. Nodey will look through all of the folders and any of their subfolders and "require" all of the .js files.
 ```javascript
 var nodey = require('nodey')
-nodey.register(path, ["controllers", "models", "views"], callback);
+nodey.register(path, ["controllers", "models", "views"], function(err){...});
 ```
 Once the files are loaded Nodey can retrieve them via nodey.resolve.
 ```javascript
-var nodey = require('nodey')
-nodey.register(path, ["controllers", "models", "views"], callback);
-var resolvedThing = nodey.resolve("myAwesomeController", callback);
+nodey.resolve("NameOfMyAwesomeObject", function(err, resolvedItem){...});
 ```
 
 ###Express example
@@ -38,10 +36,10 @@ var boostrapper = function(){
 };
 var routeHandler = function(expressApp, nodey){
 	var router = function router(req, res, next) {
-		var controllerName = req.params.controller ? req.params.controller : '';
-		nodey.resolve(controllerName.toLowerCase() + 'Controller', function(err, controller){
+		var controllerName = req.params.controller ? req.params.controller : "";
+		nodey.resolve(controllerName.toLowerCase() + "Controller", function(err, controller){
 			if(err){
-				res.render('404');
+				res.render("404");
 				return;
 			}
 			controller(req, res, next);
